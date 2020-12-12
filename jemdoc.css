@@ -394,3 +394,67 @@ table.imgtable td {
   border: none;
   text-align: left;
 }
+
+/* ol.count-backwards {
+    list-style-type:none;
+}
+
+ol.count-backwards > li {
+    counter-increment:start-from -1;
+}
+
+ol.count-backwards > li:before {
+    content:counter(start-from) ". ";
+}
+
+* html ol.count-backwards { list-style-type:decimal; }
+*+html ol.count-backwards { list-style-type:decimal; } */
+
+ol.journals {
+  list-style-type:none;
+  counter-reset:item 22;
+}
+
+ol.conferences {
+  list-style-type:none;
+  counter-reset:item 31;
+}
+
+ol.chapters {
+  list-style-type:none;
+  counter-reset:item 2;
+}
+
+ol.others {
+  list-style-type:none;
+  counter-reset:item 3;
+}
+
+ol > li {
+    counter-increment:item -1;
+    display: block;
+}
+
+ol.journals > li:before {
+    content: "[J" counter(item) "] ";
+    font-weight: bold;
+}
+
+ol.conferences > li:before {
+  content: "[C" counter(item) "] ";
+  font-weight: bold;
+}
+
+ol.chapters > li:before {
+  content: "[BC" counter(item) "] ";
+  font-weight: bold;
+}
+
+ol.others > li:before {
+  content: "[O" counter(item) "] ";
+  font-weight: bold;
+}
+
+li.single-digit {
+  margin-left: 0.5em;
+}
