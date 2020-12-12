@@ -395,22 +395,9 @@ table.imgtable td {
   text-align: left;
 }
 
-/* ol.count-backwards {
-    list-style-type:none;
-}
+/* THE CODE BELOW WORKED FINE WITH LISTS BUT IS NOT IN USE */
 
-ol.count-backwards > li {
-    counter-increment:start-from -1;
-}
-
-ol.count-backwards > li:before {
-    content:counter(start-from) ". ";
-}
-
-* html ol.count-backwards { list-style-type:decimal; }
-*+html ol.count-backwards { list-style-type:decimal; } */
-
-ol.journals {
+/* ol.journals {
   list-style-type:none;
   counter-reset:item 22;
 }
@@ -457,4 +444,22 @@ ol.others > li:before {
 
 li.single-digit {
   margin-left: 0.5em;
+} */
+
+
+/* styling publications table */
+.c2 {
+  text-align: left;
+  border: 0;
+  vertical-align: top;
+}
+
+.c1 {
+  text-align: right;
+  border: 0;
+  vertical-align: top;
+}
+
+#publication {
+  border: none;
 }
