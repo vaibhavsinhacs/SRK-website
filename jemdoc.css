@@ -8,8 +8,8 @@ table#tlayout {
 
 body {
   background: white;
-  /*font-family: Georgia, serif;*/
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Georgia, serif;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
   /*font-family: "Times New Roman", Times, serif;*/
   padding-bottom: 8px;
   margin: 0;
